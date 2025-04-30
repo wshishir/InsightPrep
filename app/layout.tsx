@@ -13,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' className="dark">
-      <body className={`${Bricol.className} antialiased`}>{children}</body>
+    <html lang='en' className='dark'>
+      <body className={`${Bricol.className} antialiased pattern`}>{children}</body>
     </html>
   );
 }
