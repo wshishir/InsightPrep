@@ -4,13 +4,25 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+
 const formSchema = z.object({
   username: z.string().min(2).max(50),
 });
 
 import React from "react";
 
-const AuthForm = () => {
+const AuthForm = ({ type } : {type: FormType}) => { //added prop for signup/signin page 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -21,7 +33,18 @@ const AuthForm = () => {
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
   }
-  return <div>AuthForm</div>; 
+
+        const isSignIn = type === 'sign-in' //boolean varilable 
+  return (
+    <div className='lg:min-w-[566px]'>
+      <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-6 w-full'>
+          
+          <Button type='submit'>Submit</Button>
+        </form>
+      </Form>
+    </div>
+  );
 };
 
 export default AuthForm;
