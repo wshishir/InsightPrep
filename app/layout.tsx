@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Bricol } from "@/app/ui/fonts";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "InsightPrep",
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className='dark'>
-      <body className={`${Bricol.className} antialiased`}>{children}</body>
+      <body className={`${Bricol.className} antialiased`}>
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }
