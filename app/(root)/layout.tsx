@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode } from 'react';
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return <div>{children}</div>;

@@ -16,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className='dark'>
-      <body className={`${Bricol.className} antialiased`}>
+      <body
+        className={`${Bricol.className} antialiased bg-gradient-to-r from-[#000000] to-[#130F40]`}
+      >
         {children}
         <Toaster />
       </body>
