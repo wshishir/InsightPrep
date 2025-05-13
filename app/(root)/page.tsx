@@ -1,3 +1,4 @@
+'use client';
 import { AnimatedHeader } from '@/components/AnimatedHeader';
 import { AnimatedText } from '@/components/AnimatedText';
 import Footer from '@/components/Footer';
@@ -7,9 +8,11 @@ import { Button } from '@/components/ui/button';
 import { perks } from '@/constants';
 
 import { ArrowBigLeft, ArrowRight, Star } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
 const page = () => {
+  const router = useRouter();
   return (
     <>
       {/*Navbar*/}
@@ -23,7 +26,12 @@ const page = () => {
             <a href='#'>Pricing</a>
             <a href='#'>Contact</a>
           </nav>
-          <Button className='mr-20'>Login</Button>
+          <Button
+            className='mr-20 cursor-pointer'
+            onClick={() => router.push('/sign-in')}
+          >
+            Login
+          </Button>
         </div>
       </section>
       {/*Hero Section*/}
@@ -45,10 +53,18 @@ const page = () => {
             </p>
           </div>
           <div className='flex justify-center mt-6 '>
-            <button className='bg-[#786ee8] hover:bg-[#786ee8e6] text-white cursor-pointer rounded-2xl flex p-2.5'>
+            <button
+              className='bg-[#786ee8] hover:bg-[#786ee8e6] text-white cursor-pointer rounded-2xl flex p-2.5'
+              onClick={() => router.push('/dashboard')}
+            >
               Get Started for free <ArrowRight className='ml-1.5' />
             </button>
-            <button className='flex ml-3 p-2.5 rounded-2xl border-1 border-white'>
+            <button
+              className='flex ml-3 p-2.5 rounded-2xl border-1 border-white cursor-pointer'
+              onClick={() =>
+                router.push('https://github.com/wshishir/InsightPrep')
+              }
+            >
               <Star className='mr-2' />
               Star on Github
             </button>
@@ -102,7 +118,7 @@ const page = () => {
           What our users saying
         </h2>
         <div className='my-17'>
-        <Testimonals />
+          <Testimonals />
         </div>
       </section>
 
