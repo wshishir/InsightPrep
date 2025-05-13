@@ -2,17 +2,11 @@ import { AnimatedHeader } from '@/components/AnimatedHeader';
 import { AnimatedText } from '@/components/AnimatedText';
 import Footer from '@/components/Footer';
 import { NeonGradientCard } from '@/components/magicui/neon-gradient-card';
-import { ShineBorder } from '@/components/magicui/shine-border';
+import { Testimonals } from '@/components/Testimonals';
 import { Button } from '@/components/ui/button';
 import { perks } from '@/constants';
 
-import {
-  ArrowBigLeft,
-  ArrowRight,
-  ArrowRightFromLine,
-  Container,
-  Star,
-} from 'lucide-react';
+import { ArrowBigLeft, ArrowRight, Star } from 'lucide-react';
 import React from 'react';
 
 const page = () => {
@@ -76,12 +70,12 @@ const page = () => {
       <section className='mt-40'>
         <AnimatedHeader label='How it works'></AnimatedHeader>
         <div className='flex justify-center mt-5'>
-          <h3 className='text-4xl'>
+          <h2 className='text-4xl font-medium'>
             Simple Steps to Prepare
             <span className='flex justify-around'>for your Interview</span>
-          </h3>
+          </h2>
         </div>
-        <div className=' mx-20'>
+        <div className='mx-20'>
           <div className='flex w-full flex-col items-center justify-center py-10 md:py-20'>
             <div className='grid w-full grid-cols-1 divide-x-0 divide-y divide-gray-900 first:border-gray-900 md:grid-cols-2 md:divide-x md:divide-y-0 lg:grid-cols-3 lg:first:border-none'>
               {perks.map((perk) => (
@@ -98,6 +92,17 @@ const page = () => {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/*Testimonials Section*/}
+      <section className='mt-25'>
+        <AnimatedHeader label='Testimonials'></AnimatedHeader>
+        <h2 className='flex justify-center font-medium text-4xl'>
+          What our users saying
+        </h2>
+        <div className='my-17'>
+        <Testimonals />
         </div>
       </section>
 
