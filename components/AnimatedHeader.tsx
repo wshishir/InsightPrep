@@ -1,6 +1,4 @@
-import { cn } from '@/lib/utils';
-import { AnimatedShinyText } from './magicui/animated-shiny-text';
-import { ShineBorder } from './magicui/shine-border';
+import { Button } from './ui/button';
 
 interface AnimatedHeaderProp {
   label: string;
@@ -8,8 +6,10 @@ interface AnimatedHeaderProp {
 
 export function AnimatedHeader({ label }: AnimatedHeaderProp) {
   return (
-    <div className='flex justify-center border-2'>
-      <button>How it works</button>
+    <div className='flex justify-center m-10'>
+      <Button className='bg-transparent text-white border-2 rounded-xl label'>
+        {label}
+      </Button>
     </div>
   );
 }

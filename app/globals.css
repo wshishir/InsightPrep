@@ -187,6 +187,11 @@
   to {
     background-position: 0% 0%;
     }
+  }
+  @keyframes gradient {
+  to {
+    background-position: var(--bg-size, 300%) 0;
+    }
   }}
 
 @layer base {
