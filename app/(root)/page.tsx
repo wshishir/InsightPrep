@@ -3,10 +3,13 @@ import { AnimatedText } from '@/components/AnimatedText';
 import Footer from '@/components/Footer';
 import { NeonGradientCard } from '@/components/magicui/neon-gradient-card';
 import { Button } from '@/components/ui/button';
+import { perks } from '@/constants';
+
 import {
   ArrowBigLeft,
   ArrowRight,
   ArrowRightFromLine,
+  Container,
   Star,
 } from 'lucide-react';
 import React from 'react';
@@ -69,8 +72,34 @@ const page = () => {
         </div>
       </section>
       {/*Features Section*/}
-      <section>
-      <AnimatedHeader label='Features'/>
+      <section className='mt-40'>
+        <AnimatedHeader label='Features' />
+        <div className='flex justify-center'>
+          <h3 className='text-4xl'>
+            Simple Steps to Prepare{' '}
+            <span className='flex justify-around'>for your Interview</span>
+          </h3>
+        </div>
+        <div className=' mx-20'>
+          <div className='flex w-full flex-col items-center justify-center py-10 md:py-20'>
+            <div className='grid w-full grid-cols-1 divide-x-0 divide-y divide-gray-900 first:border-gray-900 md:grid-cols-2 md:divide-x md:divide-y-0 lg:grid-cols-3 lg:first:border-none'>
+              {perks.map((perk) => (
+                <div
+                  key={perk.title}
+                  className='flex flex-col items-start px-4 py-4 md:px-6 lg:px-8 lg:py-6'
+                >
+                  <div className='flex items-center justify-center'>
+                    <perk.icon className='h-8 w-8' />
+                  </div>
+                  <h3 className='mt-4 text-lg font-medium'>{perk.title}</h3>
+                  <p className='mt-2 text-start text-muted-foreground'>
+                    {perk.info}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
 
       {/*Footer*/}

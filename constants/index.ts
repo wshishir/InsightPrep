@@ -1,6 +1,26 @@
 // import { CreateAssistantDTO } from "@vapi-ai/web/dist/api";
 // import { z } from "zod";
 
+import { ChartNetwork, EyeIcon, LaughIcon } from 'lucide-react';
+
+export const perks = [
+  {
+    icon: EyeIcon,
+    title: 'I. Sign Up',
+    info: 'Create your free account to start buying, selling, or storing energy.',
+  },
+  {
+    icon: ChartNetwork,
+    title: 'II. Trade',
+    info: "Select whether you're selling surplus solar power or purchasing energy at low prices.",
+  },
+  {
+    icon: LaughIcon,
+    title: 'III. Store & Use',
+    info: 'Securely store energy for future projects or manage your energy portfolio with ease.',
+  },
+];
+
 // export const mappings = {
 //   "react.js": "react",
 //   reactjs: "react",
@@ -145,7 +165,6 @@
 // Thank the candidate for their time.
 // Inform them that the company will reach out soon with feedback.
 // End the conversation on a polite and positive note.
-
 
 // - Be sure to be professional and polite.
 // - Keep all your responses short and simple. Use official language, but be kind and welcoming.
