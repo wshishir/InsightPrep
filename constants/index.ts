@@ -7,17 +7,17 @@ export const perks = [
   {
     icon: EyeIcon,
     title: 'I. Sign Up',
-    info: 'Create your free account to start buying, selling, or storing energy.',
+    info: 'Create an account to give various interview formats like HR, technical and behavioral interviews.',
   },
   {
     icon: ChartNetwork,
-    title: 'II. Trade',
-    info: "Select whether you're selling surplus solar power or purchasing energy at low prices.",
+    title: 'II. Interview',
+    info: 'Users can select a job role and the agent tailors questions accordingly.',
   },
   {
     icon: LaughIcon,
-    title: 'III. Store & Use',
-    info: 'Securely store energy for future projects or manage your energy portfolio with ease.',
+    title: 'III. Get your Feedback',
+    info: 'Provides instant feedback on answers with scoring based on relevance, clarity and confidence.',
   },
 ];
 

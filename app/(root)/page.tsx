@@ -2,6 +2,7 @@ import { AnimatedHeader } from '@/components/AnimatedHeader';
 import { AnimatedText } from '@/components/AnimatedText';
 import Footer from '@/components/Footer';
 import { NeonGradientCard } from '@/components/magicui/neon-gradient-card';
+import { ShineBorder } from '@/components/magicui/shine-border';
 import { Button } from '@/components/ui/button';
 import { perks } from '@/constants';
 
@@ -73,10 +74,10 @@ const page = () => {
       </section>
       {/*Features Section*/}
       <section className='mt-40'>
-        <AnimatedHeader label='Features' />
-        <div className='flex justify-center'>
+        <AnimatedHeader label='How it works'></AnimatedHeader>
+        <div className='flex justify-center mt-5'>
           <h3 className='text-4xl'>
-            Simple Steps to Prepare{' '}
+            Simple Steps to Prepare
             <span className='flex justify-around'>for your Interview</span>
           </h3>
         </div>
@@ -92,9 +93,7 @@ const page = () => {
                     <perk.icon className='h-8 w-8' />
                   </div>
                   <h3 className='mt-4 text-lg font-medium'>{perk.title}</h3>
-                  <p className='mt-2 text-start text-muted-foreground'>
-                    {perk.info}
-                  </p>
+                  <p className='mt-2 text-start text-gray-500'>{perk.info}</p>
                 </div>
               ))}
             </div>
