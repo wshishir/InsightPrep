@@ -1,4 +1,6 @@
 import { AnimatedText } from '@/components/AnimatedText';
+import Footer from '@/components/Footer';
+import { NeonGradientCard } from '@/components/magicui/neon-gradient-card';
 import { Button } from '@/components/ui/button';
 import {
   ArrowBigLeft,
@@ -47,13 +49,29 @@ const page = () => {
             <button className='bg-[#786ee8] hover:bg-[#786ee8e6] text-white cursor-pointer rounded-2xl flex p-2.5'>
               Get Started for free <ArrowRight className='ml-1.5' />
             </button>
-            <button className='flex ml-3 p-2.5 rounded-2xl border-1 border-white'  >
-              <Star className='mr-2'/>
+            <button className='flex ml-3 p-2.5 rounded-2xl border-1 border-white'>
+              <Star className='mr-2' />
               Star on Github
             </button>
           </div>
         </div>
       </section>
+
+      {/*Card Section*/}
+      <section>
+        <div className='flex justify-center mt-25'>
+      <NeonGradientCard className=" flex max-w-sm items-center justify-center text-center">
+      <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-6xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
+        Loading...
+      </span>
+    </NeonGradientCard>
+    </div>
+    </section>
+
+    {/*Footer*/}
+    <section>
+      <Footer/>
+    </section>
     </>
   );
 };
