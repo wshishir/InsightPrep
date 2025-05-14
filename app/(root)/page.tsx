@@ -2,6 +2,7 @@
 import { AnimatedHeader } from '@/components/AnimatedHeader';
 import { AnimatedText } from '@/components/AnimatedText';
 import Footer from '@/components/Footer';
+import { HeroButton } from '@/components/HeroButton';
 import { NeonGradientCard } from '@/components/magicui/neon-gradient-card';
 import { Testimonals } from '@/components/Testimonals';
 import { Button } from '@/components/ui/button';
@@ -53,12 +54,7 @@ const page = () => {
             </p>
           </div>
           <div className='flex justify-center mt-6 '>
-            <button
-              className='bg-[#786ee8] hover:bg-[#786ee8e6] text-white cursor-pointer rounded-2xl flex p-2.5'
-              onClick={() => router.push('/dashboard')}
-            >
-              Get Started for free <ArrowRight className='ml-1.5' />
-            </button>
+            <HeroButton/>
             <button
               className='flex ml-3 p-2.5 rounded-2xl border-1 border-white cursor-pointer'
               onClick={() =>
