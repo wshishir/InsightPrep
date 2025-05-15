@@ -1,6 +1,7 @@
 'use client';
 import { AnimatedHeader } from '@/components/AnimatedHeader';
 import { AnimatedText } from '@/components/AnimatedText';
+import Faqs from '@/components/Faqs';
 import Footer from '@/components/Footer';
 import { HeroButton } from '@/components/HeroButton';
 import { NeonGradientCard } from '@/components/magicui/neon-gradient-card';
@@ -8,7 +9,6 @@ import { Testimonals } from '@/components/Testimonals';
 import { Button } from '@/components/ui/button';
 import { perks } from '@/constants';
 
-import { ArrowBigLeft, ArrowRight, Star } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 
@@ -54,16 +54,7 @@ const page = () => {
             </p>
           </div>
           <div className='flex justify-center mt-6 '>
-            <HeroButton/>
-            <button
-              className='flex ml-3 p-2.5 rounded-2xl border-1 border-white cursor-pointer'
-              onClick={() =>
-                router.push('https://github.com/wshishir/InsightPrep')
-              }
-            >
-              <Star className='mr-2' />
-              Star on Github
-            </button>
+            <HeroButton label='Get Started for Free' />
           </div>
         </div>
       </section>
@@ -105,6 +96,20 @@ const page = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/*Faqs Section*/}
+      <section className='mt-40'>
+        <AnimatedHeader label='FAQs' />
+        <div className='flex justify-center mt-5'>
+          <h2 className='text-4xl font-medium'>
+            Find answers to common questions
+            <span className='flex justify-around'>
+              about our products and services
+            </span>
+          </h2>
+        </div>
+        <Faqs />
       </section>
 
       {/*Testimonials Section*/}

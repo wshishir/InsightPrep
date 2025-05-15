@@ -5,8 +5,8 @@ import { Toaster } from 'sonner';
 
 export const metadata: Metadata = {
   icons: ['/avatar.png'],
-  title: 'InsightPrep',
-  description: 'AI powered platform for mock interviews',
+  title: 'InsightPrep - AI Powered Interview Prepration',
+  description: 'AI Powered Interview Prepration',
 };
 
 export default function RootLayout({
