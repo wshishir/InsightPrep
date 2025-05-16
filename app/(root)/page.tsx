@@ -72,7 +72,7 @@ const page = () => {
       {/*Features Section*/}
       <section className='mt-40'>
         <AnimatedHeader label='How it works'></AnimatedHeader>
-        <div className='flex justify-center mt-5 mx-5'>
+        <div className='flex justify-center mt-5 mx-'>
           <h2 className='md:text-4xl font-medium text-center'>
             Simple Steps to Prepare for your Interview
           </h2>

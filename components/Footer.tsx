@@ -23,119 +23,54 @@ const Footer = () => {
             <a
               href='https://x.com/shishirtwts'
               target='_blank'
-              className='underline ml-1 text-[#786ee8]'
+              className='ml-1 text-[#786ee8]'
             >
-              {' '}
-              Shishir{' '}
+              Shishir
             </a>
           </span>
         </div>
 
-        <div className='mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0'>
-          <div className='md:grid md:grid-cols-2 md:gap-8'>
-            <div className=''>
-              <h3 className='text-base font-medium text-white'>Product</h3>
-              <ul className='mt-4 text-sm ' style={{ listStyleType: 'none' }}>
-                <li className='mt-2'>
-                  <Link
-                    href=''
-                    className='transition-all duration-300 text-gray-400'
-                  >
-                    Features
-                  </Link>
-                </li>
-                <li className='mt-2'>
-                  <Link
-                    href=''
-                    className='transition-all duration-300 text-gray-400'
-                  >
-                    Pricing
-                  </Link>
-                </li>
-                <li className='mt-2'>
-                  <Link
-                    href=''
-                    className='transition-all duration-300 text-gray-400'
-                  >
-                    How to use
-                  </Link>
-                </li>
-                <li className='mt-2'>
-                  <Link
-                    href=''
-                    className='transition-all duration-300 text-gray-400'
-                  >
-                    Integration
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className='mt-10 flex flex-col md:mt-0'>
-              <h3 className='text-base font-medium text-white'>Integrations</h3>
-              <ul className='mt-4 text-sm' style={{ listStyleType: 'none' }}>
-                <li className=''>
-                  <Link
-                    href=''
-                    className='transition-all duration-300 text-gray-400'
-                  >
-                    Facebook
-                  </Link>
-                </li>
-                <li className='mt-2'>
-                  <Link
-                    href=''
-                    className='transition-all duration-300 text-gray-400'
-                  >
-                    Instagram
-                  </Link>
-                </li>
-                <li className='mt-2'>
-                  <Link
-                    href=''
-                    className='transition-all duration-300 text-gray-400'
-                  >
-                    X
-                  </Link>
-                </li>
-                <li className='mt-2'>
-                  <Link
-                    href=''
-                    className='transition-all duration-300 text-gray-400'
-                  >
-                    LinkedIn
-                  </Link>
-                </li>
-              </ul>
-            </div>
+        <div className='grid grid-cols-2 gap-8'>
+          <div>
+            <h3 className='text-base font-medium text-white'>Product</h3>
+            <ul className='mt-4 text-sm ' style={{ listStyleType: 'none' }}>
+              <li className='mt-2'>
+                <Link href='' className=' text-gray-400'>
+                  Features
+                </Link>
+              </li>
+              <li className='mt-2'>
+                <Link href='' className=' text-gray-400'>
+                  Pricing
+                </Link>
+              </li>
+              <li className='mt-2'>
+                <Link href='' className=' text-gray-400'>
+                  How to use
+                </Link>
+              </li>
+            </ul>
           </div>
-          <div className='md:grid md:grid-cols-2 md:gap-8'>
-            <div className='mt-10 flex flex-col md:mt-0'>
+
+          <div>
+            <div className=' flex flex-col '>
               <h3 className='text-base font-medium text-white'>Company</h3>
               <ul
                 className='mt-4 text-sm text-gray-400'
                 style={{ listStyleType: 'none' }}
               >
                 <li className=''>
-                  <Link
-                    href=''
-                    className='transition-all duration-300 text-gray-400'
-                  >
+                  <Link href='' className=' text-gray-400'>
                     About Us
                   </Link>
                 </li>
                 <li className='mt-2'>
-                  <Link
-                    href=''
-                    className='transition-all duration-300 text-gray-400'
-                  >
+                  <Link href='' className=' text-gray-400'>
                     Privacy Policy
                   </Link>
                 </li>
                 <li className='mt-2'>
-                  <Link
-                    href=''
-                    className='transition-all duration-300 text-gray-400'
-                  >
+                  <Link href='' className=' text-gray-400'>
                     Terms & Conditions
                   </Link>
                 </li>
