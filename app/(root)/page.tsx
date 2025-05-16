@@ -19,7 +19,7 @@ const page = () => {
       {/*Navbar*/}
       <section className='mt-8'>
         <div className='flex justify-between'>
-          <button className='ml-14 text-2xl font-medium cursor-pointer'>
+          <button className=' md:ml-14 text-2xl font-medium cursor-pointer ml-4'>
             <span className='text-[#786ee8]'>Insight</span>Prep
           </button>
           <nav className='hidden md:flex gap-6 justify-center w-full text-lg'>
@@ -28,7 +28,7 @@ const page = () => {
             <a href='#'>Contact</a>
           </nav>
           <Button
-            className='mr-20 cursor-pointer'
+            className='mr-20 cursor-pointer hidden md:flex'
             onClick={() => router.push('/sign-in')}
           >
             Login
@@ -38,17 +38,17 @@ const page = () => {
       {/*Hero Section*/}
       <section>
         <div>
-          <div className='flex mt-28'>
+          <div className='flex md:mt-28 mt-15'>
             <AnimatedText />
           </div>
           <div className='flex justify-center mt-4'>
-            <h2 className='md:text-[65px]'>
+            <h2 className='md:text-[65px] '>
               AI-Powered Interview
               <span className='flex justify-center'>Prepration</span>
             </h2>
           </div>
-          <div className='mt-4 justify-center flex'>
-            <p className=' text-gray-400 text-lg'>
+          <div className='mt-4 justify-center flex ml-3'>
+            <p className=' text-gray-400 md:text-lg '>
               An AI-powered interview agent built with Vapi that conducts and
               analyzes real time mock interviews.
             </p>
@@ -61,8 +61,8 @@ const page = () => {
 
       {/*Card Section*/}
       <section>
-        <div className='flex justify-center mt-25'>
-          <NeonGradientCard className=' flex max-w-sm items-center justify-center text-center'>
+        <div className='flex justify-center md:mt-25 mt-15'>
+          <NeonGradientCard className=' flex max-w-sm items-center justify-center text-center mx-5 md:mx-auto '>
             <span className='pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-6xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]'>
               Loading...
             </span>
@@ -72,10 +72,9 @@ const page = () => {
       {/*Features Section*/}
       <section className='mt-40'>
         <AnimatedHeader label='How it works'></AnimatedHeader>
-        <div className='flex justify-center mt-5'>
-          <h2 className='text-4xl font-medium'>
-            Simple Steps to Prepare
-            <span className='flex justify-around'>for your Interview</span>
+        <div className='flex justify-center mt-5 mx-5'>
+          <h2 className='md:text-4xl font-medium text-center'>
+            Simple Steps to Prepare for your Interview
           </h2>
         </div>
         <div className='mx-20'>
@@ -101,12 +100,9 @@ const page = () => {
       {/*Faqs Section*/}
       <section className='mt-40'>
         <AnimatedHeader label='FAQs' />
-        <div className='flex justify-center mt-5'>
-          <h2 className='text-4xl font-medium'>
+        <div className='flex justify-center text-center mt-5'>
+          <h2 className='md:text-4xl font-medium'>
             Find answers to common questions
-            <span className='flex justify-around'>
-              about our products and services
-            </span>
           </h2>
         </div>
         <Faqs />
